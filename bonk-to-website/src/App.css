@@ -1,0 +1,154 @@
+html,
+body,
+#root,
+.App{  
+  height: 98%;
+  width: 100%;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.club {
+  transition: transform 1s linear;
+  transform-origin: bottom left;
+  transform-style: preserve-3D;
+}
+
+.club-bonk {
+  transform: rotate(90deg);
+}
+.disableSelection{
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+outline: 0;
+}
+.bonkerContainer{
+  display: inline-block;
+  height: 80%;
+  width: 50%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.bonker{
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+.bonkeeContainer{
+  display: inline-block;
+  position: relative;
+  height: 80%;
+  width: 50%;
+}
+.bonkee{
+  display: inline-block;
+  position: absolute;
+  top:10%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+.postbondbonkee{
+  display: inline-block;
+  position: absolute;
+  top:10%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+.bonkee.bonked{
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+.postbondbonkee.bonked{
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+.bonkstick{
+  display: block;
+  position: absolute;
+  bottom: 15%;
+  left: 80%;
+z-index: 1;
+height: 80%;
+width: 80%;
+transition: transform 0.5s linear;
+transform: rotate(-30deg);
+transform-origin: bottom left;
+transform-style: preserve-3D;
+}
+.bonkstick.bonked{
+  transition: transform 0.5s ease;
+  transform: rotate(0deg);
+}
+
+.gotoword,
+.bonkword{
+  position: absolute;
+  display:block;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+.bonkword{  
+  transform: rotate(-35deg);
+  font-size: xx-large;
+  top:30%;
+  right: 50%;
+}
+.gotoword{
+top:10%;
+right:-20%;
+font-size: large;
+}
+
+.gotoword.bonked,
+.bonkword.bonked{
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
