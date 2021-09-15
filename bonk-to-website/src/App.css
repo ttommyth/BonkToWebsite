@@ -90,7 +90,7 @@ outline: 0;
   height: 100%;
   width: 100%;
   opacity: 1;
-  transition: opacity 0.5s ease-out;
+  transition: opacity 0.3s ease-out;
 }
 .postbondbonkee{
   display: inline-block;
@@ -100,15 +100,15 @@ outline: 0;
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: opacity 0.5s ease-out;
+  transition: opacity 0.3s ease-out;
 }
 .bonkee.bonked{
   opacity: 0;
-  transition: opacity 0.5s ease-in;
+  transition: opacity 0.3s ease-in;
 }
 .postbondbonkee.bonked{
   opacity: 1;
-  transition: opacity 0.5s ease-in;
+  transition: opacity 0.3s ease-in;
 }
 .bonkstick{
   display: block;
@@ -118,13 +118,13 @@ outline: 0;
 z-index: 1;
 height: 80%;
 width: 80%;
-transition: transform 0.5s linear;
+transition: transform 0.2s linear;
 transform: rotate(-30deg);
 transform-origin: bottom left;
 transform-style: preserve-3D;
 }
 .bonkstick.bonked{
-  transition: transform 0.5s ease;
+  transition: transform 0.2s linear;
   transform: rotate(0deg);
 }
 
@@ -133,7 +133,7 @@ transform-style: preserve-3D;
   position: absolute;
   display:block;
   opacity: 0;
-  transition: opacity 0.5s ease-out;
+  transition: opacity 0.3s ease-out;
 }
 .bonkword{  
   transform: rotate(-35deg);
@@ -150,5 +150,5 @@ font-size: large;
 .gotoword.bonked,
 .bonkword.bonked{
   opacity: 1;
-  transition: opacity 0.5s ease-in;
+  transition: opacity 0.3s ease-in;
 }
