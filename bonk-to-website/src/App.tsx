@@ -20,11 +20,15 @@ const App= ( )=> {
   const doUnbonk = () => {
     setBonk(false);
   }
+  React.useEffect(()=>{
+    var adsbygoogle = (window as any).adsbygoogle;
+    (adsbygoogle || []).push({});
+  },[])
   return (
     <div className="App">
       <div onMouseDown={doBonk} onMouseUp={doUnbonk} className={"disableSelection"}
       onDragStart={e=>e.preventDefault()}
-        style={{ height: "100%", width: "100%", alignContent: "center", alignItems: "center" }}
+        style={{ height: "90%", width: "100%", alignContent: "center", alignItems: "center" }}
       >
         <div className={"bonkerContainer"}>
       bonked: {counter}
@@ -50,9 +54,6 @@ const App= ( )=> {
      data-ad-slot="5662747107"
      data-ad-format="auto"
      data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
       </div>
     </div>
   );
