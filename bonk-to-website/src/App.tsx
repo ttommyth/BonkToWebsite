@@ -8,6 +8,8 @@ import './App.css';
 import { Helmet } from "react-helmet";
 import { relative } from 'path';
 import { displayPartsToString } from 'typescript';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import { IconButton } from '@material-ui/core';
 
 const App= ( )=> {
   const [bonk, setBonk] = React.useState(false);
@@ -26,6 +28,9 @@ const App= ( )=> {
   },[])
   return (
     <div className="App">
+    <IconButton aria-label="github repo" target="_blank" href="https://github.com/ttommyth/BonkToWebsite" style={{position:"absolute", left:0, zIndex:100}}>
+<GitHubIcon />
+</IconButton>
       <div onMouseDown={doBonk} onMouseUp={doUnbonk} className={"disableSelection"}
       onDragStart={e=>e.preventDefault()}
         style={{ height: "90%", width: "100%", alignContent: "center", alignItems: "center" }}
