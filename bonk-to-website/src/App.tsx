@@ -22,9 +22,6 @@ const App= ( )=> {
   }
   return (
     <div className="App">
-      <Helmet>
-        <script data-ad-client="ca-pub-8517193754882771" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-      </Helmet>
       bonked: {counter}
       <div onMouseDown={doBonk} onMouseUp={doUnbonk} className={"disableSelection"}
       onDragStart={e=>e.preventDefault()}
