@@ -27,6 +27,7 @@ const App= ( )=> {
       </Helmet>
       bonked: {counter}
       <div onMouseDown={doBonk} onMouseUp={doUnbonk} className={"disableSelection"}
+      onDragStart={e=>e.preventDefault()}
         style={{ height: "100%", width: "100%", alignContent: "center", alignItems: "center" }}
       >
         <div className={"bonkerContainer"}>
